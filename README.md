@@ -11,6 +11,38 @@ Customer churn is a critical business problem, especially in subscription-based 
 Given the strong class imbalance in the dataset, special focus is placed on evaluation metrics such as recall, precision, F1-score, and PR-AUC rather than accuracy alone.
 
 ---
+
+## Project Structure
+```
+├── data/
+│ └── PreprocessedData.csv
+│ └── WA_Fn-UseC_-Telco-Customer-Churn.csv
+│
+├── models/
+│ ├── logreg_best_model.pkl
+│ ├── logreg_best_threshold.pkl
+│ ├── rf_best_model.pkl
+│ ├── rf_best_threshold.pkl
+│ ├── xgb_best_model.pkl
+│ └── xgb_best_threshold.pkl
+│
+├── notebooks/
+│ ├── 01_data_exploration.ipynb
+│ ├── 02_preprocessing.ipynb
+│ ├── 03_modeling.ipynb
+│ └── 04_evaluation.ipynb
+│
+├── reports/
+│ └── figures/
+│   ├── pr_curves.png
+│   ├── feature_importance.png
+│   └── churn_distributions.png
+│
+└── README.md
+
+```
+---
+
 ## Dataset Description
 This project uses the **Telco Customer Churn** dataset from Kaggle:
 
@@ -51,36 +83,6 @@ Below is a visualization of the churn distribution:
 
 
 ---
-## Project Structure
-```
-├── data/
-│ └── PreprocessedData.csv
-│ └── WA_Fn-UseC_-Telco-Customer-Churn.csv
-│
-├── models/
-│ ├── logreg_best_model.pkl
-│ ├── logreg_best_threshold.pkl
-│ ├── rf_best_model.pkl
-│ ├── rf_best_threshold.pkl
-│ ├── xgb_best_model.pkl
-│ └── xgb_best_threshold.pkl
-│
-├── notebooks/
-│ ├── 01_data_exploration.ipynb
-│ ├── 02_preprocessing.ipynb
-│ ├── 03_modeling.ipynb
-│ └── 04_evaluation.ipynb
-│
-├── reports/
-│ └── figures/
-│   ├── pr_curves.png
-│   ├── feature_importance.png
-│   └── churn_distributions.png
-│
-└── README.md
-
-```
----
 
 ## Workflow
 
@@ -111,7 +113,7 @@ Initial exploration of customer demographics, service usage, and contract types 
 
 ---
 
-### 6. Model Evaluation
+### 4. Model Evaluation
 Models were evaluated on an unseen test set using:
 
 - Default threshold (0.5)
