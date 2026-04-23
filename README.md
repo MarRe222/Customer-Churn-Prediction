@@ -192,9 +192,3 @@ Logistic Regression remains a strong interpretable alternative.
 - Combine churn risk with customer lifetime value (CLV) to prioritize high‑value customers.
 - Model monitoring to detect drift in churn behavior over time.
 ---
-
-## Author
-
-This project was developed as part of a machine learning portfolio focusing on customer analytics and predictive modeling.
-```
-
