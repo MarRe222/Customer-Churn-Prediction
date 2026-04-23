@@ -51,8 +51,8 @@ Below is a visualization of the churn distribution:
 
 
 ---
-```
 ## Project Structure
+```
 ├── data/
 │ └── PreprocessedData.csv
 │ └── WA_Fn-UseC_-Telco-Customer-Churn.csv
